@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "category":2,
+        "name":"Hamburger",
+        "description":"Osetite ukus najukusnijeg hamburgera",
+        "price":1000,
+        "image":"../../assets/images/img-04.jpg"
+    },
+    {
+        "id":2,
+        "category":2,
+        "name":"Piletina u sosu",
+        "description":"Piletina u gorgonzola sosu",
+        "price":1500,
+        "image":"../../assets/images/img-05.jpg"
+    },
+    {
+        "id":3,
+        "category":2,
+        "name":"Šnicla na naš način",
+        "description":"Šnicla na naš način, specijalitet kuće.",
+        "price":1300,
+        "image":"../../assets/images/img-06.jpg"
+    },
+    {
+        "id":4,
+        "category":3,
+        "name":"Italijanska večera",
+        "description":"Isprobajte nešto novo i nesvakidašnje",
+        "price":700,
+        "image":"../../assets/images/gallery-img-04.jpg"
+    },
+    {
+        "id":5,
+        "category":3,
+        "name":"Pizza",
+        "description":"Pizza specijale",
+        "price":970,
+        "image":"../../assets/images/blog-img-05.jpg"
+    },
+    {
+        "id":6,
+        "category":3,
+        "name":"Palačinke",
+        "description":"Isprobajte palačinke po Američkom receptu",
+        "price":350,
+        "image":"../../assets/images/gallery-img-06.jpg"
+    },
+    {
+        "id":7,
+        "category":1,
+        "name":"Omlet",
+        "description":"Omlet sa kobasicom",
+        "price":200,
+        "image":"../../assets/images/omlet.jpg"
+    },
+    {
+        "id":8,
+        "category":1,
+        "name":"Sendvič",
+        "description":"Srpski sendvič, suvo meso,pečenica,paradajz..",
+        "price":290,
+        "image":"../../assets/images/sendvic.jpg"
+    },
+    {
+        "id":9,
+        "category":1,
+        "name":"Cezar",
+        "description":"Cezar salata",
+        "price":500,
+        "image":"../../assets/images/cezar.jpg"
+    }
+]

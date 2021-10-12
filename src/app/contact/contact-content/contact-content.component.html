@@ -1,0 +1,65 @@
+<div class="contact-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="heading-title text-center">
+                    <h2 [@Welcome]>Kontaktirajte nas</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form id="contactForm" [formGroup]="contactForm" (ngSubmit)="sendToAdmin()">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" matInput formControlName="firstName" class="form-control" placeholder="Vaše ime">
+                                <div class="help-block text-danger" *ngIf="contactForm.get('firstName').hasError('required')">Ime je obavezan parametar</div>
+
+                            </div>                                 
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" matInput formControlName="lastName" class="form-control" placeholder="Vaše prezime">
+                                <div class="help-block text-danger" *ngIf="contactForm.get('lastName').hasError('required')">Prezime je obavezan parametar</div>
+                            </div>                                 
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" matInput formControlName="email" placeholder="Vaš Email" class="form-control">
+                                <div class="help-block text-danger" *ngIf="contactForm.get('email').hasError('required')">Email je obavezan parametar</div>
+                                <div class="help-block text-danger" *ngIf="contactForm.get('email').hasError('email')">Email nije u dobrom formatu: primer@email.com</div>
+                            </div> 
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" matInput formControlName="phoneNumber" placeholder="Vaš telefon" class="form-control">
+                                <div class="help-block text-danger" *ngIf="contactForm.get('phoneNumber').hasError('required')">Telefon je obavezan parametar</div>
+                                        <div class="help-block text-danger" *ngIf="contactForm.get('phoneNumber').hasError('pattern')">Telefon mora imati najmanje 9 cifara</div>
+                            </div> 
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" matInput formControlName="title" placeholder="Naslov" class="form-control">
+                                <div class="help-block text-danger" *ngIf="contactForm.get('title').hasError('required')">Naslov je obavezan parametar</div>
+                            </div> 
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group"> 
+                                <textarea class="form-control" matInput formControlName="content" placeholder="Poruka" rows="4"></textarea>
+                                <div class="help-block text-danger" *ngIf="contactForm.get('content').hasError('required')">Poruka je obavezan parametar</div>
+                                <div class="help-block text-danger" *ngIf="contactForm.get('content').hasError('minlength')">Poruka mora sadržati više od 5 karaktera</div>
+                                <div class="help-block text-danger" *ngIf="contactForm.get('content').hasError('maxlength')">Poruka može sadržati najviše od 1000 karaktera</div>
+                            </div>
+                            <div class="submit-button text-center">
+                                <button class="btn btn-common" [disabled]="!contactForm.valid" type="submit">Pošalji</button>
+                                <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                                <div class="clearfix"></div> 
+                            </div>
+                        </div>
+                    </div>            
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
